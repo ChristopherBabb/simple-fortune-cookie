@@ -9,4 +9,4 @@ jobs:
         uses: actions/checkout@v2
       - run: ls
       - name: checkout
-        run: chmod +x docker build -t test -f backend/dockerfile /home/ubuntu/simple-fortune-cookie-2/backend
+        run: chmod +x docker build -t test -f backend/dockerfile simple-fortune-cookie-2/backend
