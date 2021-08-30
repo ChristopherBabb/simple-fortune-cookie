@@ -1,0 +1,14 @@
+
+version: '3.4'
+
+services:
+    backend:
+        image: simple-fortune-cookie-backend
+        build: backend/.
+        ports:
+            - 9000:9000
+    frontend:
+        image: simple-fortune-cookie-frontend
+        build: frontend/.
+        ports:
+            - 8080:8080
