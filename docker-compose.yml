@@ -5,8 +5,7 @@ services:
     backend:
         image: simple-fortune-cookie-backend
         build: backend/.
-        ports:
-            - 9000:9000
+        
     frontend:
         image: simple-fortune-cookie-frontend
         build: frontend/.
