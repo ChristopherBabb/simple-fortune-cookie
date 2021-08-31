@@ -2,9 +2,14 @@
 version: '3.4'
 
 services:
+    database:
+        image: redis
+
     backend:
         image: simple-fortune-cookie-backend
         build: backend/.
+        environment:
+            REDIS_DNS: database
         
     frontend:
         image: simple-fortune-cookie-frontend
