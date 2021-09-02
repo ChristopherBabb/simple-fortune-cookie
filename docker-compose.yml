@@ -8,7 +8,8 @@ services:
     backend:
         image: simple-fortune-cookie-backend
         build: backend/.
-        ports: 9000:9000
+        ports:
+            - 9000:9000
         environment:
             REDIS_DNS: database
         
